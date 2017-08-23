@@ -3,31 +3,17 @@ if (typeof keensoft == "undefined" || !keensoft)
 {
    var keensoft = {};
 }
-keensoft.template = keensoft.template || {};   
+keensoft.DocListToolbar = keensoft.DocListToolbar || {};
+
+/**
+ * Alfresco Slingshot aliases
+ */
+var $html = Alfresco.util.encodeHTML;
    
 (function() {
 
-   /**
-    * YUI Library aliases
-    */
-   var Dom = YAHOO.util.Dom, Event = YAHOO.util.Event, Element = YAHOO.util.Element;
-
-   /**
-    * Alfresco Slingshot aliases
-    */
-   var $html = Alfresco.util.encodeHTML, $siteURL = Alfresco.util.siteURL;
-   
    // Define constructor...
-   keensoft.template.DocListToolbar = function CustomDocListToolbar_constructor(htmlId) {
-      keensoft.template.DocListToolbar.superclass.constructor.call(this, htmlId);
-      return this;
-   };
-   
-   YAHOO.extend(keensoft.template.DocListToolbar, Alfresco.DocListToolbar);
-   YAHOO.lang.augmentProto(keensoft.template.DocListToolbar, Alfresco.doclib.Actions);
-   
-   // Extend default DocListToolbar...
-   YAHOO.extend(keensoft.template.DocListToolbar, Alfresco.DocListToolbar,
+   keensoft.DocListToolbar.prototype=
    {
 	   
 	      onCreateByTemplateNodeBeforeShow: function DLTB_onCreateByTemplateNodeBeforeShow()
@@ -83,7 +69,10 @@ keensoft.template = keensoft.template || {};
 	         }
 	      }
             	   
-   });
+   };
    
-   
+})();
+
+(function () {
+    YAHOO.lang.augmentProto(Alfresco.DocListToolbar, keensoft.DocListToolbar, true);
 })();
