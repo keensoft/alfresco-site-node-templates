@@ -1,0 +1,14 @@
+<extension>
+    <modules>
+        <module>
+            <id>Toolbar customization</id>
+            <customizations>
+                <customization>
+                    <targetPackageRoot>org.alfresco</targetPackageRoot>
+                    <sourcePackageRoot>es.keensoft.site-node-template</sourcePackageRoot>
+                </customization>
+            </customizations>
+            <auto-deploy>true</auto-deploy>
+        </module>
+    </modules>
+</extension>
