@@ -13,7 +13,7 @@ By using this addon, also documents having `cm:siteTemplatable` aspect inside th
 The plugin is licensed under the [LGPL v3.0](http://www.gnu.org/licenses/lgpl-3.0.html). 
 
 **State**
-Current addon release is 1.1.0
+Current addon release is 2.0.0
 
 **Compatibility**
 The current version has been developed using Alfresco 201707 and Alfresco SDK 3.0.1
@@ -24,8 +24,8 @@ Downloading the ready-to-deploy-plugin
 --------------------------------------
 The binary distribution is made of two JAR files to be deployed in Alfresco as a platform and share module:
 
-* [platform JAR](https://github.com/keensoft/alfresco-site-node-templates/releases/download/1.1.0/site-node-template-repo-1.1.0.jar)
-* [share JAR](https://github.com/keensoft/alfresco-site-node-templates/releases/download/1.1.0/site-node-template-share-1.1.0.jar)
+* [platform JAR](https://github.com/keensoft/alfresco-site-node-templates/releases/download/2.0.0/site-node-template-repo-2.0.0.jar)
+* [share JAR](https://github.com/keensoft/alfresco-site-node-templates/releases/download/2.0.0/site-node-template-share-2.0.0.jar)
 
 You can install it by copying platform JAR file to `$ALFRESCO_HOME/modules/platform`, share JAR file to `$ALFRESCO_HOME/modules/share` and re-starting Alfresco.
 
