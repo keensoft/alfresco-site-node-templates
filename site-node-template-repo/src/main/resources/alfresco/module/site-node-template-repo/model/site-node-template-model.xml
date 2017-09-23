@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model name="ksst:siteTemplateModel" xmlns="http://www.alfresco.org/model/dictionary/1.0">
+    <description>Site Template Model</description>
+    <author>keensoft</author>
+    <version>1.0</version>
+    
+    <imports>
+        <import uri="http://www.alfresco.org/model/dictionary/1.0" prefix="d" />
+    </imports>
+    
+    <namespaces>
+        <namespace uri="http://www.keensoft.es/model/content/site/template/1.0" prefix="ksst" />
+    </namespaces>
+    
+    <aspects>
+        <aspect name="ksst:nodeTemplateSite">
+            <title>Node Template</title>
+        </aspect>
+    </aspects>
+    
+</model>

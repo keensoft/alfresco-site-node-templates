@@ -1,0 +1,17 @@
+<alfresco-config>
+
+	<config evaluator="string-compare" condition="DocumentLibrary">
+		<aspects>
+			<visible>
+				<aspect name="ksst:nodeTemplateSite" />
+			</visible>
+			
+			<addable>
+			</addable>
+			
+			<removeable>
+			</removeable>
+		</aspects>
+	</config>
+
+</alfresco-config>

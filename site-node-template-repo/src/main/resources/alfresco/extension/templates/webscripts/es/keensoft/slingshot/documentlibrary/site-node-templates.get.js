@@ -8,7 +8,7 @@ function main()
    var nodes = search.selectNodes('/app:company_home/app:dictionary/app:node_templates/*[subtypeOf("cm:content")]');
    var siteId = args["siteId"];
    if (siteId) {
-       var siteNodes = search.selectNodes('/app:company_home/st:sites/cm:' + siteId + '/cm:documentLibrary//*[hasAspect("cm:templatable")]');
+       var siteNodes = search.selectNodes('/app:company_home/st:sites/cm:' + siteId + '/cm:documentLibrary//*[hasAspect("ksst:nodeTemplateSite")]');
        siteNodes.sort(compare);
        nodes = nodes.concat(siteNodes);   
    }
