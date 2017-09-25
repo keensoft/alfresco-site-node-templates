@@ -20,4 +20,9 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
           http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
+    <bean id="site-node-template-repo-copyBehaviour" class="es.keensoft.alfresco.behaviour.SkipNodeTemplateAspectBehaviour" init-method="init">
+        <property name="policyComponent" ref="policyComponent"/>
+        <property name="nodeService" ref="NodeService"/>
+    </bean>
+    
 </beans>
